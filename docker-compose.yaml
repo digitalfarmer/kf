@@ -1,19 +1,9 @@
 version: '3'
 services:
   web:
-    build:
-      context: ./
-      dockerfile: web.dockerfile
-    volumes:
-      - ./:/var/www
+    image: img-static-site-example
+    build: .
+    container_name: my-static-site
+    restart: always
     ports:
-      - "80:80"
-    links:
-      - bsp
-
-  bsp:
-    build:
-      context: ./
-      dockerfile: bsp.dockerfile
-    volumes:
-      - ./:/var/www
+      - "8080:80"
