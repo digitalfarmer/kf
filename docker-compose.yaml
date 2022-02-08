@@ -1,9 +1,9 @@
 version: '3'
 services:
   web:
-    image: img-static-site-example
+    image: img-kf
     build: .
-    container_name: my-static-site
+    container_name: kf-site
     restart: always
     ports:
       - "8080:80"
