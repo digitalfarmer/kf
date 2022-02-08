@@ -1,4 +1,4 @@
-version: '2'
+version: '1'
 services:
   web:
     build:
@@ -17,8 +17,3 @@ services:
       dockerfile: bsp.dockerfile
     volumes:
       - ./:/var/www
-
-  cache:
-    image: redis:3.0
-    ports:
-      - "63791:6379"
