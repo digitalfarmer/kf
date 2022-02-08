@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: img-kf
+    image: kf-site
     build: .
     container_name: kf-site
     restart: always
